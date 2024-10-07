@@ -1,0 +1,302 @@
+/* RESET DE LA PAGE */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+     width: 900px;
+      margin: 0 auto;
+      font-family: Arial, Helvetica, sans-serif;
+      color: navy;
+      background: #F1F1F1;
+      justify-content: baseline;
+}
+
+
+/* HEADER */
+
+header{
+    
+    height: 90px;
+    text-transform: uppercase;
+    font-size: 14px;
+    justify-content: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+p{
+    display: inline-block;
+    text-align: center;
+}
+
+.logo{
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.logo-img{
+    width: 80px;
+    padding: 5px;
+}
+
+.form{
+    margin: 15px;
+}
+
+.ambuDE{
+    width: 200px;
+    border: none;
+    border-bottom: navy 2px dashed;
+    margin-left: 5px;
+    background: #F1F1F1;
+}
+
+
+/* INTER */
+
+
+#inter{
+    border-bottom: grey 1px dotted ;
+}
+
+
+#inter-info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+
+.info, .info-grand{
+    margin: 10px;
+}
+
+.ligne{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+
+.numAppel{
+    width: 50px;
+    border: none;
+    border-bottom: navy 2px dashed;
+    background: #F1F1F1;
+}
+
+.infoGd, .infoMoy, .infoPt, .infoNb, .ambuDE, .numAppel, .area{
+    border: none;
+    border-bottom: navy 1px dashed;
+    background: #F1F1F1;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.infoPt{
+    width: 125px;
+    border: none;
+    border-bottom: navy 2px dashed;
+    background: #F1F1F1;
+}
+
+.infoGd{
+    width: 650px;
+    border: none;
+    border-bottom: navy 2px dashed;
+    background: #F1F1F1;
+}
+
+/* PATIENT */
+
+#patient{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 0;
+    border-bottom: grey 1px dotted ;
+}
+
+.infoMoy{
+    width: 250px;
+    border: none;
+    border-bottom: navy 2px dashed;
+    background: #F1F1F1;
+}
+
+h2{
+    font-size: 20px;
+    display: inline-block;
+}
+
+.sexe{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+p{
+    margin: 0 10px;
+}
+.sexe-container{
+    display: flex;
+}
+
+.sexe-info{
+    margin: 0 5px;
+}
+
+/* BILAN */
+
+#bilan{
+    margin :10px;
+    border-bottom: grey 1px dotted ;
+}
+
+#bilan .info-grand{
+    margin: 0;
+}
+
+
+h3{
+    display: inline-block;
+}
+.vital-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.yesno-item{
+    display: flex;
+}
+
+.yesno-item-pci{
+margin-left: 160px;
+}
+
+
+.infoNb{
+    width: 40px;
+    border: none;
+    border-bottom: navy 2px dashed;
+    background: #F1F1F1;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* GROSSESSE + LESIONNEL */
+
+#gross-lesio{
+    margin :10px;
+    border-bottom: grey 1px dotted ;
+    display: flex;
+}
+
+.gross-container{
+    width: 450px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-right: #2e2e2e double 1px;
+    padding-right: 25px;
+}
+
+.lesio-container{
+    width: 450px;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 25px;
+}
+
+.lesio-info{
+    height: 20px;
+}
+
+.lesio-block{
+    margin-top: 20px;
+}
+
+/* MHTA-Info */
+
+#MHTA-info{
+    margin :10px;
+    border-bottom: grey 1px dotted ;
+    display: flex;
+}
+
+.infoTGd{
+    width: 500px;
+    height: 40px;
+    border: none;
+    border-bottom: navy 2px dashed;
+    background: #F1F1F1;
+}
+
+.info3L{
+    width: 125px;
+    height: 90px;
+    border: none;
+    border-bottom: navy 2px dashed;
+    background: #F1F1F1;
+}
+
+.info-container{
+    width: 400px;
+    border-left: #2e2e2e double 1px;
+}
+
+.area{
+    border: none;
+    border-bottom: navy 2px dashed;
+    background: #F1F1F1;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* GESTES */
+
+#gestes{
+    margin :10px;
+    border-bottom: grey 1px dotted ;
+}
+
+
+/* OBSERVATIONS */
+
+#complement{
+    margin :10px;
+    border-bottom: grey 1px dotted ;
+}
+
+
+
+/* FOOTER */
+
+footer{
+    margin :20px auto ;
+    border-bottom: grey 1px dotted ;
+    display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}

@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!-- HEADER -->
+
+<header>
+    <figure class="logo">
+        <img src="./samulogo.png" class="logo-img">
+        <figcaption>samu 37</figcaption>
+    </figure>
+    <div class="form">
+        <label for="Nom">ADE :</label>
+        <input type="text" class="ambuDE" name="Nom">
+    </div>
+    <div class="form">
+        <label for="Nom">ADE // AA // PSC1 :</label>
+        <input type="text" class="ambuDE" name="Nom">
+    </div>    
+    <figure class="logo">
+        <img src="./croixlogo.png"  class="logo-img">
+        <figcaption>atsu 37</figcaption>
+    </figure>
+</header>
+
+
+<!-- INTER -->
+
+<section id="inter">
+    <h1>Fiche bilan</h1>
+    <div class="inter-info">
+    <div class="ligne">
+        <div class="info">
+            <label for="Nom">N° appel : <span id="jour-de-l-annee"></span></label>
+            <input type="text" class="numAppel" name="Nom">
+        </div>
+        <div class="info">
+            <label for="Nom">Nom de l'entreprise :</label>
+            <input type="text" class="infoPt" name="Nom">
+        </div>
+        <div class="info">
+            <p>Date : <span id="date-du-jour"></span></p>
+        </div>
+    </div>
+    <div class="ligne">
+        <div class="info">
+            <label for="Nom">Heure d'appel :</label>
+            <input type="time" class="infoPt" name="Nom">
+        </div>
+        <div class="info">
+            <label for="Nom">Heure sur place :</label>
+            <input type="time" class="infoPt" name="Nom">
+        </div>
+        <div class="info">
+            <label for="Nom">Heure de départ :</label>
+            <input type="time" class="infoPt" name="Nom">
+        </div>
+    </div>
+        <div class="info-grand">
+            <label for="Nom">Lieu d'intervention :</label>
+            <input type="text" class="infoGd" name="Nom">
+        </div>
+    </div>
+</section>
+
+
+<!-- PATIENT -->
+
+<section id="patient">
+    <div class="ligne">
+        <div class="info">
+            <label for="Nom"><h2>NOM :</h2></label>
+            <input type="text" class="infoMoy" name="Nom">
+        </div>
+        <div class="info">
+            <label for="Nom"><h2>PRENOM :</h2></label>
+            <input type="text" class="infoMoy" name="Nom">
+        </div>
+    </div>    
+    <div class="ligne">
+        <div class="sexe">
+            <p>Sexe :</p>
+            <div class="sexe-container">
+            <div class="sexe-info">
+                    <input type="radio" id="Homme" name="sexe" value="Homme">
+            <label for="H">Homme</label>
+            </div>
+            <div class="sexe-info">
+                <input type="radio" id="Femme" name="sexe" value="Femme">
+                <label for="F">Femme</label>
+            </div>
+            <div class="sexe-info">
+                <input type="radio" id="Autre" name="sexe" value="Autre">
+                <label for="A">Autre</label>
+            </div>
+            </div>
+        </div> 
+        <div class="info">
+            <label for="Nom">Age :</label>
+            <input type="text" class="infoNb" name="Nom">
+        </div>
+        <div class="info">
+            <label for="Nom">Date de naissance :</label>
+            <input type="date" class="infoMoy" name="Nom">
+        </div>
+    
+    </div>
+    <div class="info-grand">
+        <label for="Nom">Adresse du patient :</label>
+        <input type="text" class="infoGd" name="Nom">
+    </div>  
+</section>
+    
+
+<!-- BILAN -->
+<section id="bilan">
+    <div class="info-grand">
+        <label for="Nom"><h3>Bilan circonstanciel :</h3></label>
+        <input type="text" class="infoGd" name="Nom">
+    </div> 
+    <div class="vital-container">
+        <div class="ligne">
+            <h4>Conscience :</h4>
+            <div class="yesno-item">
+                <p>Réponse verbale :</p>
+                <div class="yesno-container">
+                    <div class="yesno-info">
+                        <input type="radio" id="Oui" name="verbal" value="Oui">
+                        <label for="Oui">Oui</label>
+                    </div>
+                    <div class="yesno-info">
+                        <input type="radio" id="Non" name="verbal" value="Non">
+                        <label for="Non">Non</label>
+                    </div>
+                </div>
+            </div>
+            <div class="yesno-item">
+                <p>Réponse motrice :</p>
+                <div class="yesno-container">
+                    <div class="yesno-info">
+                        <input type="radio" id="Oui" name="motrice"  value="Oui">
+                        <label for="Oui">Oui</label>
+                    </div>
+                    <div class="yesno-info">
+                        <input type="radio" id="Non" name="motrice" value="Non">
+                        <label for="Non">Non</label>
+                    </div>
+                </div>
+            </div>
+            <div class="yesno-item">
+                <p>Ouverture des yeux :</p>
+                <div class="yesno-container">
+                    <div class="yesno-info">
+                        <input type="radio" id="Oui" name="eyes"  value="Oui">
+                        <label for="Oui">Oui</label>
+                    </div>
+                    <div class="yesno-info">
+                        <input type="radio" id="Non" name="eyes" value="Non">
+                        <label for="Non">Non</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ligne">
+            <div class="yesno-item yesno-item-pci">
+                <p>Perte de connaissance :</p>
+                <div class="yesno-container">
+                    <div class="yesno-info">
+                        <input type="radio" id="Oui" name="pci"  value="Oui">
+                        <label for="Oui">Oui</label>
+                    </div>
+                    <div class="yesno-info">
+                        <input type="radio" id="Non" name="pci" value="Non">
+                        <label for="Non">Non</label>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <label for="Nom">Durée de la PCI :</label>
+                <input type="text" class="infoPt" name="Nom">
+            </div>
+        </div>
+    </div>
+    <div class="vital-container">
+        <div class="ligne">
+            <h4>Respiration :</h4>
+            <div class="yesno-item">
+                <p>Arrêt respiratoire</p>
+                <div class="yesno-container">
+                    <div class="yesno-info">
+                        <input type="radio" id="Oui" name="ar" value="Oui">
+                        <label for="Oui">Oui</label>
+                    </div>
+                    <div class="yesno-info">
+                        <input type="radio" id="Non" name="ar" value="Non">
+                        <label for="Non">Non</label>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                    <label for="Nom">Fréquence respiratoire :</label>
+                    <input type="text" class="infoNb" name="Nom">
+            </div>
+            <div class="info">
+                    <label for="Nom">Saturation air ambiant :</label>
+                    <input type="text" class="infoNb" name="Nom">
+                    %
+            </div>
+        </div>
+        <div class="ligne">
+            <div class="yesno-item">
+                <p>Difficultés respiratoires :</p>
+                <div class="yesno-container">
+                    <div class="yesno-info">
+                        <input type="radio" id="Oui" name="dyspn"  value="Oui">
+                        <label for="Oui">Oui</label>
+                    </div>
+                    <div class="yesno-info">
+                        <input type="radio" id="Non" name="dyspn" value="Non">
+                        <label for="Non">Non</label>
+                    </div>
+                </div>
+            </div>
+            <div class="yesno-item">
+                <p>Cyanoses :</p>
+                <div class="yesno-container">
+                    <div class="yesno-info">
+                        <input type="radio" id="Oui" name="cyan"  value="Oui">
+                        <label for="Oui">Oui</label>
+                    </div>
+                    <div class="yesno-info">
+                        <input type="radio" id="Non" name="cyan" value="Non">
+                        <label for="Non">Non</label>
+                    </div>
+                </div>
+            </div>
+            <div class="yesno-item">
+                <p>Marbrures :</p>
+                <div class="yesno-container">
+                    <div class="yesno-info">
+                        <input type="radio" id="Oui" name="marbr"  value="Oui">
+                        <label for="Oui">Oui</label>
+                    </div>
+                    <div class="yesno-info">
+                        <input type="radio" id="Non" name="marbr" value="Non">
+                        <label for="Non">Non</label>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <label for="Nom">SpO2 sous <select id="selectMenu">
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="6">6</option>
+                    <option value="9">9</option>
+                    <option value="12">12</option>
+                    <option value="15">15</option>
+                  </select>
+                   L/min :</label>
+                <input type="text" class="infoNb" name="Nom"> %
+        </div>
+        </div>
+    </div>
+    <div class="vital-container">
+        <div class="ligne">
+            <h4>Circulation :</h4>
+            <div class="yesno-item">
+                <p>Arrêt cardiaque</p>
+                <div class="yesno-container">
+                    <div class="yesno-info">
+                        <input type="radio" id="Oui" name="acr" value="Oui">
+                        <label for="Oui">Oui</label>
+                    </div>
+                    <div class="yesno-info">
+                        <input type="radio" id="Non" name="acr" value="Non">
+                        <label for="Non">Non</label>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                    <label for="Nom">Fréquence cardiaque :</label>
+                    <input type="text" class="infoNb" name="Nom">
+            </div>
+            <p>Régulier</p>
+                <div class="yesno-container">
+                    <div class="yesno-info">
+                        <input type="radio" id="Oui" name="reg" value="Oui">
+                        <label for="Oui">Oui</label>
+                    </div>
+                    <div class="yesno-info">
+                        <input type="radio" id="Non" name="reg" value="Non">
+                        <label for="Non">Non</label>
+                    </div>
+                </div>
+                <p>Bien perçu</p>
+                <div class="yesno-container">
+                    <div class="yesno-info">
+                        <input type="radio" id="Oui" name="per" value="Oui">
+                        <label for="Oui">Oui</label>
+                    </div>
+                    <div class="yesno-info">
+                        <input type="radio" id="Non" name="per" value="Non">
+                        <label for="Non">Non</label>
+                    </div>
+                </div>
+
+        </div>
+        <div class="ligne">
+            <div class="info">
+                <label for="Nom">Pression artérielle :</label>
+                <input type="text" class="infoNb" name="Nom"> /
+                <input type="text" class="infoNb" name="Nom">
+            </div>
+            <div class="yesno-item">
+                <p>Sueurs :</p>
+                <div class="yesno-container">
+                    <div class="yesno-info">
+                        <input type="radio" id="Oui" name="sueur"  value="Oui">
+                        <label for="Oui">Oui</label>
+                    </div>
+                    <div class="yesno-info">
+                        <input type="radio" id="Non" name="sueur" value="Non">
+                        <label for="Non">Non</label>
+                    </div>
+                </div>
+            </div>
+            <div class="yesno-item">
+                <p>Pâleur :</p>
+                <div class="yesno-container">
+                    <div class="yesno-info">
+                        <input type="radio" id="Oui" name="pal"  value="Oui">
+                        <label for="Oui">Oui</label>
+                    </div>
+                    <div class="yesno-info">
+                        <input type="radio" id="Non" name="pal" value="Non">
+                        <label for="Non">Non</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="vital-container">
+        <div class="ligne">
+            <h4>Divers :</h4>
+            <div class="info">
+                    <label for="Nom">Température :</label>
+                    <input type="text" class="infoNb" name="Nom">
+                    °C
+            </div>
+            <div class="yesno-item">
+                <p>Nausées</p>
+                <div class="yesno-container">
+                    <div class="yesno-info">
+                        <input type="radio" id="Oui" name="nau" value="Oui">
+                        <label for="Oui">Oui</label>
+                    </div>
+                    <div class="yesno-info">
+                        <input type="radio" id="Non" name="nau" value="Non">
+                        <label for="Non">Non</label>
+                    </div>
+                </div>
+            </div>
+            <div class="yesno-item">
+                <p>Vomissements</p>
+                <div class="yesno-container">
+                    <div class="yesno-info">
+                        <input type="radio" id="Oui" name="vomi" value="Oui">
+                        <label for="Oui">Oui</label>
+                    </div>
+                    <div class="yesno-info">
+                        <input type="radio" id="Non" name="vomi" value="Non">
+                        <label for="Non">Non</label>
+                    </div>
+                </div>
+            </div>
+            <div class="yesno-item">
+                <p>Convulsions</p>
+                <div class="yesno-container">
+                    <div class="yesno-info">
+                        <input type="radio" id="Oui" name="conv" value="Oui">
+                        <label for="Oui">Oui</label>
+                    </div>
+                    <div class="yesno-info">
+                        <input type="radio" id="Non" name="conv" value="Non">
+                        <label for="Non">Non</label>
+                    </div>
+                </div>
+            </div>
+            <div class="yesno-item">
+                <p>Agitation</p>
+                <div class="yesno-container">
+                    <div class="yesno-info">
+                        <input type="radio" id="Oui" name="agit" value="Oui">
+                        <label for="Oui">Oui</label>
+                    </div>
+                    <div class="yesno-info">
+                        <input type="radio" id="Non" name="agit" value="Non">
+                        <label for="Non">Non</label>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+</section>
+<section id="gross-lesio">
+    <div class="gross-container">
+        <h4>Grossesse :</h4>
+        <div class="info">
+            <label for="Nom">Date de terme :</label>
+            <input type="date" class="infoMoy" name="Nom">
+        </div>
+        <div class="info">
+            <label for="Nom">Nb enfants :</label>
+            <input type="number" class="infoNb" name="Nom">
+        </div>
+        <div class="info">
+            <label for="Nom">Nb grossesse :</label>
+            <input type="number" class="infoNb" name="Nom">
+        </div>
+        <div class="yesno-item">
+            <p>Perte des eaux</p>
+            <div class="yesno-container">
+                <div class="yesno-info">
+                    <input type="radio" id="Oui" name="eau" value="Oui">
+                    <label for="Oui">Oui</label>
+                </div>
+                <div class="yesno-info">
+                    <input type="radio" id="Non" name="eau" value="Non">
+                    <label for="Non">Non</label>
+                </div>
+            </div>
+        </div>
+        <div class="yesno-item">
+            <p>Envie de pousser</p>
+            <div class="yesno-container">
+                <div class="yesno-info">
+                    <input type="radio" id="Oui" name="pous" value="Oui">
+                    <label for="Oui">Oui</label>
+                </div>
+                <div class="yesno-info">
+                    <input type="radio" id="Non" name="pous" value="Non">
+                    <label for="Non">Non</label>
+                </div>
+            </div>
+        </div>
+        <div class="yesno-item">
+            <p>Contractions</p>
+            <div class="yesno-container">
+                <div class="yesno-info">
+                    <input type="radio" id="Oui" name="cont" value="Oui">
+                    <label for="Oui">Oui</label>
+                </div>
+                <div class="yesno-info">
+                    <input type="radio" id="Non" name="cont" value="Non">
+                    <label for="Non">Non</label>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <label for="Nom">Durée :</label>
+            <input type="text" class="infoNb" name="Nom">
+        </div>
+        <div class="info">
+            <label for="Nom">Intervalle :</label>
+            <input type="text" class="infoNb" name="Nom">
+        </div>
+        
+    </div>
+    <div class="lesio-container">
+        <h4>Douleur - Lésion :</h4>
+        <div class="lesio-block">
+        <div class="ligne">
+        <p>1)</p>
+        <select class="lesio-info">
+            <option value="Type">Type</option>
+            <option value="--">--</option>
+            <option value="Douleur">Douleur</option>
+            <option value="Plaie">Plaie</option>
+            <option value="Dermabrasion">Dermabrasion</option>
+            <option value="Brûlure">Brûlure</option>
+            <option value="Hémorragie">Hémorragie</option>
+        </select>    
+        <select class="lesio-info" id="localisation1">
+            <option value="Localisation">Localisation</option>
+            <option value="--">--</option>
+            <option value="Tête">Tête</option>
+            <option value="Cou">Cou</option>
+            <option value="Thorax">Thorax</option>
+            <option value="Abdomen">Abdomen</option>
+            <option value="Dos">Dos</option>
+            <option value="Membre sup. G">Membre sup. G</option>
+            <option value="Membre sup. D">Membre sup. D</option>
+            <option value="Membre inf. G">Membre inf. G</option>
+            <option value="Membre inf. D">Membre inf. D</option>
+        </select>    
+        <select class="lesio-info" id="loca-precis1">       
+        </select>
+    </div>
+        <div class="dlr">
+            <p>Evaluation de la douleur :</p>
+            <input type="range" id="slider" min="0" max="10" value="0">
+            <span id="valeur-slider">0</span>
+        </div>
+        <div class="lesio-block">
+        <div class="ligne">
+        <p>2)</p>
+        <select class="lesio-info">
+            <option value="Type">Type</option>
+            <option value="--">--</option>
+            <option value="Douleur">Douleur</option>
+            <option value="Plaie">Plaie</option>
+            <option value="Dermabrasion">Dermabrasion</option>
+            <option value="Brûlure">Brûlure</option>
+            <option value="Hémorragie">Hémorragie</option>
+        </select>    
+        <select class="lesio-info" id="localisation2">
+            <option value="Localisation">Localisation</option>
+            <option value="--">--</option>
+            <option value="Tête">Tête</option>
+            <option value="Cou">Cou</option>
+            <option value="Thorax">Thorax</option>
+            <option value="Abdomen">Abdomen</option>
+            <option value="Dos">Dos</option>
+            <option value="Membre sup. G">Membre sup. G</option>
+            <option value="Membre sup. D">Membre sup. D</option>
+            <option value="Membre inf. G">Membre inf. G</option>
+            <option value="Membre inf. D">Membre inf. D</option>
+        </select>    
+        <select class="lesio-info" id="loca-precis2">       
+        </select>
+    </div>
+    <div class="dlr">
+        <p>Évaluation de la douleur :</p>
+        <input type="range" id="slider2" min="0" max="10" value="0">
+        <span id="valeur-slider2">0</span>
+    </div>
+        <div class="lesio-block">
+        <div class="ligne">
+            <p>3)</p>
+        <select class="lesio-info">
+            <option value="Type">Type</option>
+            <option value="--">--</option>
+            <option value="Douleur">Douleur</option>
+            <option value="Déformation">Déformation</option>
+            <option value="Plaie">Plaie</option>
+            <option value="Dermabrasion">Dermabrasion</option>
+            <option value="Brûlure">Brûlure</option>
+            <option value="Hémorragie">Hémorragie</option>
+        </select>    
+        <select class="lesio-info" id="localisation3">
+            <option value="Localisation">Localisation</option>
+            <option value="--">--</option>
+            <option value="Tête">Tête</option>
+            <option value="Cou">Cou</option>
+            <option value="Thorax">Thorax</option>
+            <option value="Abdomen">Abdomen</option>
+            <option value="Dos">Dos</option>
+            <option value="Membre sup. G">Membre sup. G</option>
+            <option value="Membre sup. D">Membre sup. D</option>
+            <option value="Membre inf. G">Membre inf. G</option>
+            <option value="Membre inf. D">Membre inf. D</option>
+        </select>    
+        <select class="lesio-info" id="loca-precis3">       
+        </select>
+    </div>
+        <div class="dlr">
+            <p>Evaluation de la douleur :</p>
+            <input type="range" id="slider3" min="0" max="10" value="0">
+            <span id="valeur-slider3">0</span>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+
+<!-- MHTA-info -->
+
+<section id="MHTA-info">
+    <div class="MHTA-container">
+        <div class="antecedents">
+            <div class="info">
+                <label for="Nom">Antécédents médicaux :</label>
+                <textarea class="area" rows="3" cols="50"></textarea>
+            </div>
+        </div>
+        <div class="traitements">
+            <div class="info">
+                <label for="Nom">Traitements en cours :</label>
+                <textarea class="area" rows="3" cols="50"></textarea>
+            </div>
+        </div>
+        </div>    
+    <div class="info-container">
+        <div class="phone">
+            <div class="info">
+                <label for="Nom">Téléphone :</label>
+                <input type="phone" class="infoPt" name="Nom">
+            </div>
+        </div>
+        <div class="pap">
+            <div class="info">
+                <label for="Nom">Pers. à prevenir :</label>
+                <textarea class="area" rows="4" cols="20"></textarea>
+            </div>
+        </div>
+        <div class="doc">
+            <div class="info">
+                <label for="Nom">Medecin traitant :</label>
+                <input type="text" class="infoPt" name="Nom">
+            </div>
+    </div>
+
+</section>
+
+
+<!-- GESTES EFFECTUES -->
+
+<section id="gestes">
+    <div class="gestes-container">
+            <h4>Gestes effectués :</h4>
+            <div class="info">
+                    <label for="Nom">Glycémie :</label>
+                    <input type="text" class="infoNb" name="Nom">
+                    <span>g/L à</span>
+                    <input type="time" class="infoPt" name="Nom">
+
+            </div>
+            <div class="ligne">
+            <div class="yesno-item">
+                <p>Collier cervical</p>
+                <div class="yesno-container">
+                    <div class="yesno-info">
+                        <input type="radio" id="Oui" name="col" value="Oui">
+                        <label for="Oui">Oui</label>
+                    </div>
+                    <div class="yesno-info">
+                        <input type="radio" id="Non" name="col" value="Non">
+                        <label for="Non">Non</label>
+                    </div>
+                </div>
+            </div>
+            <div class="yesno-item">
+                <p>Matelas Coquille</p>
+                <div class="yesno-container">
+                    <div class="yesno-info">
+                        <input type="radio" id="Oui" name="mid" value="Oui">
+                        <label for="Oui">Oui</label>
+                    </div>
+                    <div class="yesno-info">
+                        <input type="radio" id="Non" name="mid" value="Non">
+                        <label for="Non">Non</label>
+                    </div>
+                </div>
+            </div>
+            <div class="yesno-item">
+                <p>Attelle</p>
+                <div class="yesno-container">
+                    <div class="yesno-info">
+                        <input type="radio" id="Oui" name="atl" value="Oui">
+                        <label for="Oui">Oui</label>
+                    </div>
+                    <div class="yesno-info">
+                        <input type="radio" id="Non" name="atl" value="Non">
+                        <label for="Non">Non</label>
+                    </div>
+                </div>
+            </div>
+            <div class="yesno-item">
+                <p>DSA</p>
+                <div class="yesno-container">
+                    <div class="yesno-info">
+                        <input type="radio" id="Oui" name="dsa" value="Oui">
+                        <label for="Oui">Oui</label>
+                    </div>
+                    <div class="yesno-info">
+                        <input type="radio" id="Non" name="dsa" value="Non">
+                        <label for="Non">Non</label>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+</section>
+
+
+<!-- OBSERVATIONS -->
+
+<section id="complement">
+    <div class="observations">
+        <div class="info">
+            <label for="Nom">Compléments - Observations : :</label>
+            <textarea class="area" rows="3" cols="75"></textarea>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="ligne">
+    <div class="yesno-item">
+        <p>Transport Médicalisé</p>
+        <div class="yesno-container">
+            <div class="yesno-info">
+                <input type="radio" id="Oui" name="med" value="Oui">
+                <label for="Oui">Oui</label>
+            </div>
+            <div class="yesno-info">
+                <input type="radio" id="Non" name="med" value="Non">
+                <label for="Non">Non</label>
+            </div>
+        </div>
+    </div>
+    <div class="yesno-item">
+        <p>Vu par un médecin ?</p>
+        <div class="yesno-container">
+            <div class="yesno-info">
+                <input type="radio" id="Oui" name="vue" value="Oui">
+                <label for="Oui">Oui</label>
+            </div>
+            <div class="yesno-info">
+                <input type="radio" id="Non" name="vue" value="Non">
+                <label for="Non">Non</label>
+            </div>
+        </div>
+    </div>
+        <div class="info">
+            <label for="Nom">Nom du médecin :</label>
+            <input type="text" class="infoPt" name="Nom">
+        </div>
+    </div>
+    <div class="ligne">
+        <div class="info">
+            <label for="Nom">Destination :</label>
+            <input type="text" class="infoPt" name="Nom">
+        </div>
+        <div class="info">
+            <label for="Nom">Heure d'arrivée :</label>
+            <input type="time" class="infoPt" name="Nom">
+        </div>
+        <div class="info">
+            <label for="Nom">Fin de mission :</label>
+            <input type="time" class="infoPt" name="Nom">
+        </div>
+    </div>
+    <div>
+        <button></button>
+    </div>
+
+</footer>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,387 @@
+/* RESET GLOBAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    list-style: none;
+    justify-content: center;
+}
+
+
+/* GLOBAL INFOS */
+
+:root {
+        --violet: #4F0341;
+        --blanc: #FFFFFF;
+        font-family: 'Roboto','Arial','sans-serif';
+        max-width: 1400px;
+        margin: auto;
+    }
+
+
+/* HEADER */
+
+header{
+    height: 70px;
+    background: var(--violet);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#navigation{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+#navigation a{
+    padding: 0 25px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: var(--blanc);
+}
+
+#navigation a:hover{
+
+    font-size: 1.3rem;
+    color: #e2e2e2;
+    transition : font-size .2s ease-in-out;
+}
+
+.mainlogo{
+    height: 70px;
+    width: auto;
+}
+
+.cartlogo{
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.flying-logo{
+    position: absolute;
+    right: 46.5%;
+    top: 995px;
+    transform: translate(0, -50%);
+    background: var(--violet);
+    border-radius: 100%;
+    border: var(--blanc) 2px solid;
+    z-index: 9998;
+}
+
+
+/* MAIN */
+
+#main{
+    margin: auto;
+    height: 480px;
+    background: url(./img/main.png) center;
+    /* opacity: .5; */
+    display: flex;
+}
+
+.main-container h1, .main-container p{
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0 #fff,  
+                  1px -1px 0 #fff,
+                 -1px  1px 0 #fff,
+                  1px  1px 0 #fff;
+    color: var(--violet);
+}
+
+
+.main-container h1{
+    font-size: 40px;
+    padding-top: 200px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.main-container p{
+    font-size: 20px;
+    padding-bottom: 24px;
+    position: relative;
+}
+
+.main-container p::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--violet);
+}
+
+/* PRODUCTS */
+
+#product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#product h2{
+    text-align: center;
+    margin: 15px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--violet);
+}
+
+.product-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.product-item{
+    border: #4F0341 1px solid;
+    border-radius: 7px;
+    margin: 35px;
+    width: 350px;
+    justify-content: center;
+    margin: 20px 100px;
+}
+
+.product-item span{
+    font-size: 16px;
+    margin: 25px;
+}
+
+#product h3{
+    margin: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--violet);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.shoe-img{
+    height: 200px;
+}
+
+.size-nb{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px auto 20px;
+}
+
+.selectMenu{
+    font-size: 16px;
+    border: #4F0341 dotted 1px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+
+.button-item{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--violet);
+    color: var(--blanc);
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-item:hover {
+    background-color: #0056b3;
+}
+
+.item-count{
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.add-to-cart {
+    background: var(--violet);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3;
+}
+
+
+/* CONTACT */
+
+.contact-container{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+background: var(--violet);
+height: 150px;
+}
+
+#contact h4{
+    color: var(--blanc);
+    font-size: 1rem;
+    margin: 15px;
+    position: relative;
+}
+
+#contact h4::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--blanc);
+}
+
+
+#contact p{
+    color: var(--blanc);
+}
+
+.socials, .location, .mail{
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.soc-logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.soc-logo a{
+    cursor: pointer;
+}
+
+
+/* CART-POPUP */
+
+#popup-cart-full, #popup-cart-empty{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--blanc); 
+    z-index: 9999; 
+    border: #4F0341 2px solid;
+    border-radius: 5px;
+    display: none;
+    text-align: center;
+}
+
+#popup-cart-full{
+    width: 500px;
+    height: 625px;
+    padding: 30px;
+}
+
+#popup-cart-empty{
+    width: 350px;
+    height: 150px;
+    padding: 20px;
+}
+
+.mini-img{
+    width: 65px;
+    height: auto;
+    margin: auto;
+}
+
+
+.mini-recap1, .mini-recap2, .mini-recap3, .mini-recap4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15 0px;
+}
+
+.quantity1, .quantity2, .quantity3, .quantity4{
+    display: flex;
+    background: var(--violet);
+    height: 40px;
+    width: 40px;
+    color: var(--blanc);
+    align-items: center;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.popup-content{
+    display: flex;
+    margin-top: 30px;
+}
+
+.popup-content span{
+    font-size: 20px;
+    margin-top: 30px;
+    margin: 8px;
+}
+
+.trashlogo1, .trashlogo2, .trashlogo3, .trashlogo4{
+    height: 20px;
+    width: auto;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.subtotal1, .subtotal2, .subtotal3, .subtotal4{
+    margin-top: 30px;
+}
+
+.calcSubTot1, .calcSubTot2, .calcSubTot3, .calcSubTot4{
+    height: 50px;
+    width: 150px;
+    color: var(--violet);
+    border-radius: 9px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.total{
+    font-size: 24px;
+    background: var(--violet);
+    color: var(--blanc);
+    border-radius: 7px;
+    height: 60px;
+    text-transform: uppercase;
+}
+
+.full-cart-button, .empty-cart-button, .viderCart{
+    margin-top: 15px;
+    background: var(--blanc);
+    color: var(--violet);
+    font-size: 16px;
+    padding: 5px;
+    border: var(--violet) 1px dotted;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width : 1117px) {
+    .flying-logo{
+        position: fixed;
+        right: 5%;
+        top: 80%;
+    }
+    
+}

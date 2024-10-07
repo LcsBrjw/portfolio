@@ -1,0 +1,240 @@
+
+/* RESET + GLOBAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    list-style: none;
+    justify-content: center;
+    font-family: "Lato", "arial", "sans-serif";   
+    outline : none;
+    scroll-behavior: smooth;
+}
+
+:root, body{
+    --white : #fff;
+    --violet : #001233;
+    --grey : #7a8376;
+ 
+    max-width: 1400px;
+    height: auto;
+    background-color: var(--violet);
+    margin: auto;
+    
+}
+
+
+/* HEADER */
+
+nav{
+    height: 70px;
+    background: var(--violet);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: var(--white) solid 1px;
+}
+
+.navigation{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-right: 60px;
+}
+
+
+.navigation a{
+    padding: 0 25px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.navigation a span{
+    font-size: 1.2rem;
+}
+
+.navigation a:hover{
+    font-size: 1.2rem;
+    color: #e2e2e2;
+    transition : font-size .2s ease-in-out;
+    font-weight: 600;
+}
+
+.mainlogo{
+    height: 65px;
+    width: auto;
+    margin-left: 60px;
+}
+
+/* SOCIALS */
+
+#social{
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    visibility: hidden;
+}
+
+#social.active{
+    visibility: visible;
+    z-index: 999;
+    background: var(--violet);
+    padding: 20px;
+    border-right: var(--white) 1px solid;
+    border-bottom: var(--white) 1px solid;
+    border-left: var(--white) 1px solid;
+}
+
+#social a img{
+    margin: 0 15px;
+    width: 25px;
+}
+
+#social a img:hover{
+    margin: 0 15px;
+    width: 30px;
+}
+
+
+/* BURGER MENU */
+
+.sidenav {
+    display: none;
+    height: 200px;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color:var(--violet);
+    transition: left 0.5s ease;
+    text-align: center;
+    border-bottom: var(--white) solid 1px;
+}
+
+.sidenav.active{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidenav a{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.sidenav a:hover{
+    font-size: 1.3rem;
+    color: #e2e2e2;
+    transition : font-size .2s ease-in-out;
+    font-weight: 600;
+}
+
+.sidenav li{
+    margin: 10px;
+}
+
+.sidenav .bm-logo{
+height: 70px;
+width: auto;
+margin: auto 60px;
+
+}
+
+.burgerButton{
+    display: none;
+    height: 50px;
+    margin: auto 10px;
+    cursor: pointer;
+}
+
+.burgerClose{
+    height: 50px;
+    margin: auto 10px;
+    cursor: pointer;
+}
+
+#bm-social img{
+    margin: 10px 15px;
+    width: 25px;
+}
+
+#bm-social img:hover{
+    margin: 5px 15px;
+    width: 30px;
+}
+
+
+
+
+/* MAIN */
+
+#main{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: url(./img/main.jpg) no-repeat center;
+    overflow: hidden;
+    height: 900px;
+    position:absolute;
+}
+
+#main p{
+    position: relative;
+    top: 10%;
+    left: 15%;
+    color: var(--white);
+    display: inline;
+    font-size: 20px;
+    padding: 10px;
+    line-height: 20px;
+    text-shadow: 1px 1px 0 var(--violet), -1px -1px 0 var(--violet);
+}
+
+#main h1{
+    position: relative;
+    top: 15%;
+    left: 15%;
+    width: 75%;
+    overflow: auto;
+    color: var(--white);
+    font-size: 32px;
+    padding: 30px 50px 20px 10px;
+    text-shadow: 1px 1px 0 var(--violet), -1px -1px 0 var(--violet);
+}
+
+
+#main h4{
+    position: relative;
+    width: 75%;
+    overflow: auto;
+    top: 20%;
+    left: 15%;
+    color: var(--white);
+    font-size: 24px;
+    text-shadow: 1px 1px 0 var(--violet), -1px -1px 0 var(--violet);
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 790px){
+    .navigation, #social{
+        display: none;
+    }
+    .burgerButton{
+        display: block;
+}
+}
+
+@media screen and (max-width: 640px){
+    .bm-logo{
+        display: none;
+    }
+}

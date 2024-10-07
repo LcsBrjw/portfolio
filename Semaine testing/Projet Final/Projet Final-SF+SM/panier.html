@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<!-- ######################## -->
+<!--    TRAVAIL DE SIDONIE    -->
+<!-- ######################## -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./panier.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Sneakers'Addict - Mon panier</title>
+</head>
+
+
+
+<body>
+  <header>
+    <img class="mainlogo" src="./images 2/Logo6-transformed1.png" alt="">
+    <ul id="navigation">
+        <li><a href="./magasin.html">Nos produits</a></li>
+        <li><a href="#contact">Nous contacter</a></li>
+        <li><a href="#team">Notre équipe</a></li>
+    </ul>
+</header>
+
+  <section>
+
+    <div class="cart-container">
+      <div class="slideshow-container">
+        <div class="slide">
+          <img src="./images 2/AJ4.png" alt="Image 1">
+        </div>
+        <div class="slide">
+          <img src="./images 2/AJ5.png" alt="Image 2">
+        </div>
+        <div class="slide">
+          <img src="./images 2/Campus.png" alt="Image 3">
+        </div>
+        <div class="slide">
+          <img src="./images 2/Conv.png" alt="Image 4">
+        </div>
+      </div>
+
+      <h1>Mon Panier</h1>
+
+      <div id="cart-items">
+        <!-- Contenu du panier -->
+      </div>
+
+
+
+<div class="cartFooter">
+      <div class="cart-total">
+        <label>Total: <span id="cart-total">0</span> EUR</label>
+        <div class="checkoutButton"><button class="checkout-button" onclick="showPopup()">Passer à la caisse</button>
+        </div>
+      </div>
+      </div>
+
+     
+
+      
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <p>Redirection vers la page de paiement ...</p>
+          <button id="hide-popup" onclick="hidePopup()">Annuler</button>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <footer id="contact">
+    <div class="contact-container">
+        <div class="socials">
+            <h4>Retrouvez nous sur nos réseaux</h4>
+            <div class="soc-logo">
+                <a href="#"><img src="./images 2/facebook-nouveau-50.png" alt=""></a>
+                <a href="#"><img src="./images 2/twitter-50.png" alt=""></a>
+                <a href="#"><img src="./images 2/instagram-50.png" alt=""></a>
+            </div>
+        </div>
+        <div class="location">
+            <h4>Notre magasin physique</h4>
+            <p><b>Sneakers'Addict</b></p>
+            <p class="loca-info">50 Avenue de Pont Cher</p>
+            <p class="loca-info">37200 TOURS</p>
+        </div>
+        <div class="mail">
+            <h4>Contactez-nous par mail</h4>
+            <p>contact@sneakersaddict.com</p>
+        </div>
+    </div>
+
+</footer>
+  </div>
+  <script src="panier.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,462 @@
+/* ------- */
+/* ------- */
+/* GENERAL */
+/* ------- */
+/* ------- */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    text-decoration: none;
+}
+
+
+
+/* ------ */
+/* ------ */
+/* HEADER */
+/* ------ */
+/* ------ */
+
+
+header
+{
+    margin: auto;
+    height: 52px;
+    width: 1400px;
+    background-color: #DD5555;
+}
+
+header nav
+{
+   
+    margin-left: 131px;  
+    
+}
+
+header nav ul
+{
+    list-style: none;
+}
+
+
+header nav ul li
+{
+    display: inline-flexbox;
+    
+}
+
+header nav ul li a
+{
+    float: left;
+    line-height: 19px;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-right: 15px;
+    padding: 17px 15px ;
+}
+
+
+header nav ul li:hover
+{
+    color: #fff;
+}
+
+header nav ul li a:hover
+{
+    background-color: rgba(0 ,0,0, 0.25);
+}
+
+.logo1
+{
+    float: left;
+    height: 28px ;
+    width: 120px;
+    margin-top: 12px;
+    margin-right: 15px;
+}
+
+
+
+
+
+/* ---------- */
+/* ---------- */
+/* MAIN IMAGE */
+/* ---------- */
+/* ---------- */
+
+
+
+
+#main-image
+{
+    margin: auto;
+    width: 1400px;
+    height: 658px;
+    background: url("images/main-image.png") center;
+
+ }
+
+#main-image .container .title1
+{
+       
+    font-size: 48px;
+    padding-top: 180px;
+    margin-bottom: 10px;
+    line-height: 57.6px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FFFFFF; 
+    font-size: 48px;
+}
+
+
+#main-image .container .title2
+{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+    line-height: 28.8px;
+    padding-bottom: 24px;
+    
+}
+
+#main-image .container ul 
+{
+    margin: auto;
+    width: 390px;
+    text-align: center;
+    border-top: #FFFFFF 1px solid;
+    padding-top: 24px;
+    list-style: none;
+    display: inline-flexbox
+
+}
+
+.button-1
+{
+    border-style: none;
+    width: 112px;
+    height: 46px;
+    background-color: #FFFFFF;
+    border-style: none;
+    border-radius: 5px;
+    margin: 0px 7px 0px 7px; 
+       
+}
+
+.button-1 img
+{
+    height: 17px;
+    width: 16px;
+}
+
+.button-1 a
+{
+    font-size: 18px;
+    color: #2E2E2E;
+}
+
+
+.button-1:hover
+{
+    background-color: #DD5555;
+    
+}
+
+
+
+
+/* -------- */
+/* -------- */
+/* SERVICES */
+/* -------- */
+/* -------- */
+
+
+
+
+#second-image1 , #second-image2 
+{
+    padding-top: 52px;
+    text-align: center;
+}
+
+
+#second-image1 .title2
+{
+    font-size: 36px;
+    margin-bottom: 53px;
+    line-height: 43.2px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight:600;
+    color: #000000;    
+    }
+
+#second-image1 .title3, #second-image2 .title3
+{
+    margin: 7px auto 15px auto;
+    line-height: 33.6px;
+    text-align: center;
+    font-weight:600;
+    font-size: 28px;
+    color: #2e2e2e;   
+}
+
+#second-image1 p ,#second-image2 p
+{
+    margin-bottom: 15px;
+    line-height: 24px;
+    text-align: center;
+}
+
+
+#second-image1 ul , #second-image2 ul
+{
+    list-style: none;
+}
+
+#second-image1 ul li, #second-image2 ul li
+{
+    display: inline-flexbox;
+    text-align: center;
+    width: 358px;
+}
+
+.rondrouge
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #DD5555;
+    text-align: center;
+    margin: auto auto 15px 119px;
+}
+
+.logov
+{
+    height: 70px;   
+    padding-top: 29px;
+}
+
+.logoh
+{
+    width: 50%;
+    height: 50%;   
+    padding-top: 33px;
+}
+
+
+
+
+/* ---- */
+/* ---- */
+/* TEAM */
+/* ---- */
+/* ---- */
+
+
+
+
+
+#team
+{
+    padding-top: 46.51px;
+    text-align: center;
+}
+
+
+#team .title4
+{
+    text-align: center;
+    padding-top: 81.5px;
+    font-size: 48px;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.name
+{
+    text-align: center;
+    font-size: 28px;
+    color: #2e2e2e;
+    font-weight: 800;
+}
+
+
+#team ul
+{
+    text-align: center;
+ 
+}
+
+#team ul li
+{
+    padding-top: 8px;
+    display: inline-block;
+    
+    text-align: center;
+}
+
+#team ul li a
+{
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.main-image2
+{
+    margin: auto;
+    background: url("images/team.jpg.png") center;
+    width: 1400px;
+    height: 240px;
+    text-align: center;
+    background-position: top;
+    
+}
+
+.portrait
+{
+    margin: 64px 53px 24px 0px;
+}
+
+.photo
+{
+    border-radius: 50%;
+    width: 239px;
+    height: 239px;
+   }
+
+.button-2
+{
+   background-color: #DD5555;
+   width: 132px;
+   height: 40px;
+   border-radius: 5px;
+   border-style: none;
+   margin-top: 24px;
+   
+}
+
+.button-2:hover
+{
+    background-color: #000000;
+    opacity: 0.75;  
+}
+
+
+
+
+/* ------- */
+/* ------- */
+/* CONTACT */
+/* ------- */
+/* ------- */
+
+
+
+
+#contact
+{
+    background-color: #DD5555;
+    height: 476px;
+    color: #FFFFFF;
+    width: 1400px;
+    margin: auto;
+}
+
+#contact .title5
+{
+    color: #FFFFFF;
+    padding-top: 51.5px;
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+#contact .container
+{
+    width: 750px;
+    margin: auto;
+    text-align: left;
+    
+}
+
+#name, #email
+{
+    width: 358px;
+    height: 32px; 
+    border-radius: 5px;
+    border-style: none;
+    margin-bottom: 20px;
+}
+
+#name
+{
+    margin-right: 24px
+}
+
+#message
+{
+    width:748px ;
+    height: 112px;
+    border-radius: 5px;
+}
+
+.container ul li
+{
+    display:inline-block;
+}
+
+.button-3
+{
+    width: 123px;
+    height: 46px;
+    
+    color: #2E2E2E;
+    border-radius: 5px;
+    border-style: none;
+    text-align: center;
+    float: right;
+    font-size: 18px;
+    padding: 10px 20px 12px auto;
+}
+
+.button-3 a
+{
+    margin-left: 4px;
+}
+
+
+.button-3 a:hover
+{
+    color: #DD5555;
+    font-weight: 600;
+}
+
+
+/* IMG-BROKEN */
+
+.img-broken{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1400px;
+    display: none;
+}
+
+.img-broken-active{
+    display: block;
+}
